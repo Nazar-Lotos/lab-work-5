@@ -2,14 +2,8 @@
 
 namespace lab_work_5
 {
-    public class Television
+    public class Television : ElectronicDevice
     {
-        public string Brand { get; set; }
-        public string Model { get; set; }
-        public int ScreenSize { get; set; }
-        public string Resolution { get; set; }
-        public bool IsSmartTV { get; set; }
-        public int SoundPower { get; set; }
         public bool IsOn { get; set; }
         public int Brightness { get; set; }
 
@@ -50,7 +44,7 @@ namespace lab_work_5
             }
         }
 
-        public void DisplayInfo()
+        public override void DisplayInfo()
         {
             Console.WriteLine($"Бренд: {Brand}");
             Console.WriteLine($"Модель: {Model}");

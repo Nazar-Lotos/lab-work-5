@@ -114,11 +114,11 @@ namespace lab_work_5
                 sw = new StreamWriter(saveFileDialog.FileName, false, Encoding.UTF8);
                 try
                 {
-                    foreach (Television television in bindSrcTVs.List)
+                    foreach (ElectronicDevice device in bindSrcTVs.List)
                     {
-                        sw.Write(television.Brand + "\t" + television.Model + "\t" +
-                                 television.ScreenSize + "\t" + television.Resolution + "\t" +
-                                 television.IsSmartTV + "\t" + television.SoundPower + "\t\n");
+                        sw.Write(device.Brand + "\t" + device.Model + "\t" +
+                                 device.ScreenSize + "\t" + device.Resolution + "\t" +
+                                 device.IsSmartTV + "\t" + device.SoundPower + "\t\n");
                     }
                 }
                 catch (Exception ex)
@@ -147,7 +147,7 @@ namespace lab_work_5
                 bw = new BinaryWriter(saveFileDialog.OpenFile());
                 try
                 {
-                    foreach (Television television in bindSrcTVs.List)
+                    foreach (ElectronicDevice television in bindSrcTVs.List)
                     {
                         bw.Write(television.Brand);
                         bw.Write(television.Model);
@@ -187,9 +187,9 @@ namespace lab_work_5
                     while ((s = sr.ReadLine()) != null)
                     {
                         string[] split = s.Split('\t');
-                        Television television = new Television(split[0], split[1], int.Parse(split[2]),
+                        ElectronicDevice device = new Television(split[0], split[1], int.Parse(split[2]),
                             split[3], bool.Parse(split[4]), int.Parse(split[5]));
-                        bindSrcTVs.Add(television);
+                        bindSrcTVs.Add(device);
                     }
                 }
                 catch (Exception ex)
@@ -217,35 +217,35 @@ namespace lab_work_5
                 br = new BinaryReader(openFileDialog.OpenFile());
                 try
                 {
-                    Television television;
+                    ElectronicDevice device;
                     while (br.BaseStream.Position < br.BaseStream.Length)
                     {
-                        television = new Television();
+                        device = new Television();
                         for (int i = 1; i <= 6; i++)
                         {
                             switch (i)
                             {
                                 case 1:
-                                    television.Brand = br.ReadString();
+                                    device.Brand = br.ReadString();
                                     break;
                                 case 2:
-                                    television.Model = br.ReadString();
+                                    device.Model = br.ReadString();
                                     break;
                                 case 3:
-                                    television.ScreenSize = br.ReadInt32();
+                                    device.ScreenSize = br.ReadInt32();
                                     break;
                                 case 4:
-                                    television.Resolution = br.ReadString();
+                                    device.Resolution = br.ReadString();
                                     break;
                                 case 5:
-                                    television.IsSmartTV = br.ReadBoolean();
+                                    device.IsSmartTV = br.ReadBoolean();
                                     break;
                                 case 6:
-                                    television.SoundPower = br.ReadInt32();
+                                    device.SoundPower = br.ReadInt32();
                                     break;
                             }
                         }
-                        bindSrcTVs.Add(television);
+                        bindSrcTVs.Add(device);
                     }
                 }
                 catch (Exception ex)

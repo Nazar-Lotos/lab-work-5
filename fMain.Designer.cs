@@ -89,14 +89,14 @@
             this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
             this.btnEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(29, 24);
+            this.btnEdit.Size = new System.Drawing.Size(29, 28);
             this.btnEdit.Text = "Редагувати запис";
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // tsSeparator1
             // 
             this.tsSeparator1.Name = "tsSeparator1";
-            this.tsSeparator1.Size = new System.Drawing.Size(6, 27);
+            this.tsSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // btnDel
             // 
@@ -104,7 +104,7 @@
             this.btnDel.Image = ((System.Drawing.Image)(resources.GetObject("btnDel.Image")));
             this.btnDel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(29, 24);
+            this.btnDel.Size = new System.Drawing.Size(29, 28);
             this.btnDel.Text = "Видалити запис";
             this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
@@ -114,14 +114,14 @@
             this.btnClear.Image = ((System.Drawing.Image)(resources.GetObject("btnClear.Image")));
             this.btnClear.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(29, 24);
+            this.btnClear.Size = new System.Drawing.Size(29, 28);
             this.btnClear.Text = "Очистити дані";
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // tsSeparator2
             // 
             this.tsSeparator2.Name = "tsSeparator2";
-            this.tsSeparator2.Size = new System.Drawing.Size(6, 27);
+            this.tsSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // btnSaveAsText
             // 
@@ -129,7 +129,7 @@
             this.btnSaveAsText.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveAsText.Image")));
             this.btnSaveAsText.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSaveAsText.Name = "btnSaveAsText";
-            this.btnSaveAsText.Size = new System.Drawing.Size(29, 24);
+            this.btnSaveAsText.Size = new System.Drawing.Size(29, 28);
             this.btnSaveAsText.Text = "toolStripButton2";
             this.btnSaveAsText.ToolTipText = "Зберегти у текстовому форматі";
             this.btnSaveAsText.Click += new System.EventHandler(this.btnSaveAsText_Click);
@@ -140,7 +140,7 @@
             this.btnSaveAsBinary.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveAsBinary.Image")));
             this.btnSaveAsBinary.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSaveAsBinary.Name = "btnSaveAsBinary";
-            this.btnSaveAsBinary.Size = new System.Drawing.Size(29, 24);
+            this.btnSaveAsBinary.Size = new System.Drawing.Size(29, 28);
             this.btnSaveAsBinary.Text = "toolStripButton3";
             this.btnSaveAsBinary.ToolTipText = "Зберегти у бінарному форматі";
             this.btnSaveAsBinary.Click += new System.EventHandler(this.btnSaveAsBinary_Click);
@@ -151,7 +151,7 @@
             this.btnOpenFromText.Image = ((System.Drawing.Image)(resources.GetObject("btnOpenFromText.Image")));
             this.btnOpenFromText.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnOpenFromText.Name = "btnOpenFromText";
-            this.btnOpenFromText.Size = new System.Drawing.Size(29, 24);
+            this.btnOpenFromText.Size = new System.Drawing.Size(29, 28);
             this.btnOpenFromText.Text = "toolStripButton4";
             this.btnOpenFromText.ToolTipText = "Зчитати у текстовому форматі";
             this.btnOpenFromText.Click += new System.EventHandler(this.btnOpenFromText_Click);
@@ -170,7 +170,7 @@
             // tsSeparator3
             // 
             this.tsSeparator3.Name = "tsSeparator3";
-            this.tsSeparator3.Size = new System.Drawing.Size(6, 27);
+            this.tsSeparator3.Size = new System.Drawing.Size(6, 31);
             // 
             // btnExit
             // 
@@ -178,7 +178,7 @@
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(29, 24);
+            this.btnExit.Size = new System.Drawing.Size(29, 28);
             this.btnExit.Text = "Вийти з програми";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
